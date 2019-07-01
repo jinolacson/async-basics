@@ -115,7 +115,7 @@ Using **callback** it will append new `{ name: 'Jino', address: 'Lacson' }` addr
 
 ## Using promises.
 
-Take a look to our simple code example we have `addressBook` which holds person informations and `getAddressBook` function that will output person's name.
+Definitions:
 
 ***async*** = ensures that the function returns a promise(resolve or reject), 
 and wraps non-promises in it.
@@ -125,6 +125,8 @@ and wraps non-promises in it.
 ***fetch*** = javascript API for accessing manipulating http requests and responses.
 
 So.. Promise first before await followed by fetch simple as that more details for [async/wait](https://javascript.info/async-await), and [fetch](https://javascript.info/fetch-basics).
+
+Take a look to our simple code example we have `addressBook` which holds person informations a `getAddressBook` function that will output person's name and `createNewAddress` that create new person address and return a promise.
 
 ### Step 1: copy and paste initial code inside browsers console.
 
