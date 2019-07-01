@@ -1,8 +1,8 @@
 # Async - Callbacks, Promises, Async Await
 
-> My simple tutorial asynchronous JavaScript we will cover callbacks, promises including promise.all as well as the async / await and fetch.
+> My simple tutorial ***asynchronous*** JavaScript we will cover `callbacks`, `promises` including `promise.all` as well as the `async / await` and `fetch`.
 
-## What is a Callback()
+### What is a Callback()
 Take a look for simple rendering example below:
 ```
 /**
@@ -51,15 +51,17 @@ The output will be  :
 * Juan dela cruz
 * Joey Marquez
 
-
+#### The problem:
 But why ***createNewAddress*** did not append `{ name: 'Jino', address: 'Lacson' }` to **addressBook** array?.
 
 The answer is ***createNewAddress*** took `2 second longer` than ***getAddressBook*** display `has only 1 second` we can do anything beyond that point. 
 
 Thats where `callback` comes in take a look for example.
 
-<details>
-<summary>Solution `callback.js`</summary>
+#### Step 1: copy and paste the code below inside browser console and see the result.
+
+1. Solution is `callback()`.
+
 ```
 // file: callback.js
 
@@ -99,7 +101,6 @@ function createNewAddress(newAddressBook, callback) {
 //Call createNewAddress function and call getAddressBook
 createNewAddress({ name: 'Jino', address: 'Lacson' }, getAddressBook);
 ```
-</details>
 The output will be:
 
 * Juan dela cruz
@@ -107,19 +108,20 @@ The output will be:
 * Jino
 
 Using **callback** it will append new `{ name: 'Jino', address: 'Lacson' }` address, even though
-***createNewAddress*** has `2 second time` than ***getAdddressBook*** has only `1 second time` durations.
-
-
+***createNewAddress*** has `2 second` than ***getAdddressBook*** has only `1 second` durations.
 
 
 # Promise() , Promise.all, Async, Wait and Fetch
 
 ## Using promises.
+
 Take a look to our simple code example we have `addressBook` which holds person informations and `getAddressBook` function that will output person's name.
 
+### Step 1: copy and paste initial code inside browsers console.
+
+1. Solution `promises()`.
 ```
 // file: promises.js
-
 /**
  * @author Jino
  * @email jinowilbertolacson@gmail.com
@@ -170,8 +172,9 @@ function createNewAddress(addrbook) {
 }
 ```
 
-<details>
-<summary>Simple `Promise`</summary>
+## Step 2 one by one paste the code below inside browser console and see the results.
+
+1. Example of a simple `Promise`
 ```
 /**
  * Create new Address and return a promise either resolve or reject
@@ -180,10 +183,8 @@ createNewAddress({ name: 'Jino', address: 'Lacson' })
 .then(getAddressBook)
 .catch(err => console.log(err));
 ```
-</details>
 
-<details>
-<summary>Using `async` and `await`</summary>
+2. Example of using `async` and `await`
 ```
 /**
  * Create new address using Async and Await
@@ -198,10 +199,8 @@ async function init() {
 //call init function
 init();
 ```
-</details>
 
-<details>
-<summary>Using `Promise.all`</summary>
+3. Example of using `Promise.all`
 ```
 // Promise.all
 const promise1 = Promise.resolve('Hello World');
@@ -220,10 +219,7 @@ Promise.all([promise1, promise2, promise3, promise4, promise5]).then(values =>
   console.log(values)
 );
 ```
-</details>
-
-<details>
-<summary>Example of using `async` `wait` and `fetch`</summary>
+4. Example of using `async`  `wait` and `fetch`.
 ```
 async function fetchUsers() {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -233,5 +229,5 @@ async function fetchUsers() {
 //call fetchUsers()
 fetchUsers();
 ```
-</details>
+
 
