@@ -2,7 +2,7 @@
 
 > My simple tutorial asynchronous JavaScript we will cover callbacks, promises including promise.all as well as the async / await and fetch.
 
-### What is a Callback()
+## What is a Callback()
 Take a look for simple rendering example below:
 ```
 /**
@@ -114,7 +114,7 @@ Using **callback** it will append new `{ name: 'Jino', address: 'Lacson' }` addr
 
 # Promise() , Promise.all, Async, Wait and Fetch
 
-### Using promises.
+## Using promises.
 Take a look to our simple code example we have `addressBook` which holds person informations and `getAddressBook` function that will output person's name.
 
 ```
