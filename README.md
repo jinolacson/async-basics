@@ -1,4 +1,4 @@
-# Async - Callbacks, Promises, Async Await
+# Asynchronous - Callbacks, Promises, Async Await and Fetch
 
 > My simple tutorial ***asynchronous*** JavaScript we will cover `callbacks`, `promises` including `promise.all` as well as the `async / await` and `fetch`.
 
