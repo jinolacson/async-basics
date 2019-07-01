@@ -54,7 +54,7 @@ The output will be  :
 #### The problem:
 But why ***createNewAddress*** did not append `{ name: 'Jino', address: 'Lacson' }` to **addressBook** array?.
 
-The answer is ***createNewAddress*** took `2 second longer` than ***getAddressBook*** display `has only 1 second` we can do anything beyond that point. 
+The answer is ***createNewAddress*** took `2 second longer` than ***getAddressBook*** display `has only 1 second`
 
 Thats where `callback` comes in take a look for example.
 
