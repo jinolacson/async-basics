@@ -181,7 +181,7 @@ function createNewAddress(addrbook) {
 }
 ```
 
-## Step 2 one by one paste the code below inside browser console and see the results.
+### Step 2 one by one paste the code below inside browser console and see the results.
 
 1. Example of a simple `Promise`
 ```
